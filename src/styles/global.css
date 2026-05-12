@@ -1,12 +1,25 @@
 @import "tailwindcss";
 
 @theme {
-    --color-primary: hsl(250 100% 70%);        /* Base purple */
-    --color-primary-hover: hsl(250 100% 65%);  /* Hover state (darker) */
-    --color-primary-alt: hsl(270 100% 65%);    /* Variant for gradients */
-    --color-primary-light: hsl(250 100% 90%);   /* Mostly used for borders */
-    --color-logo: hsl(240 50% 25%);            /* Logo */
-    --color-logo-dark: hsl(260 50% 20%);       /* Logo gradient */
-    --color-title-start: hsl(260 50% 25%);     /* Title gradient start */
-    --color-title-end: hsl(250 45% 35%);       /* Title gradient end */
+
+    /* Base */
+    --color-bg: #06070a;
+    --color-surface: #0d1016;
+
+    /* Text */
+    --color-text: #f5f7fa;
+    --color-text-soft: #c9d2de;
+    --color-text-muted: #6e7178;
+
+    /* Gold palette */
+    --color-gold: #cbb190;
+    --color-gold-soft: #ddceb9;
+    --color-gold-dark: #98886e;
+
+    /* Borders */
+    --color-border: rgba(255,255,255,0.06);
+
+    /* Glow */
+    --color-glow: rgba(203,177,144,0.12);
+
 }
