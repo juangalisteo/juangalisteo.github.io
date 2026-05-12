@@ -1,5 +1,5 @@
-# Lazy Labz Landing Page
+# Juan Galisteo | Personal Portfolio
 
-Official landing page for [Lazy Labz](https://github.com/lazylabz) - a developer organization building tools for developers, by developers. Features team information, current projects, and links to our open-source work. Because we're too lazy to do things the hard way.
+Personal portfolio and digital space focused on web development, design and modern digital experiences. Showcasing projects, technologies, creative systems and ongoing work built with a clean and cinematic visual identity.
 
-Built with [Astro](https://docs.astro.build).
+Built with Astro.
