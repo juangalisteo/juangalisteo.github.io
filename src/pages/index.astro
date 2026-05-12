@@ -1,136 +1,231 @@
 ---
-import { Image } from 'astro:assets';
-import gomanderLogo from '../assets/gomander-logo.png'
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<div class="min-h-screen flex flex-col items-center justify-center px-4 pt-16 pb-4">
-		<main class="flex-1 max-w-4xl w-full space-y-12 text-center">
+	<section class="hero">
 
-			<!-- Logo and Header -->
-			<div class="space-y-6">
-				<div class="flex justify-center">
-					<div class="w-20 h-20 bg-gradient-to-br from-logo to-logo-dark rounded-xl flex items-center justify-center shadow-lg">
-						<span class="text-4xl font-bold text-white pl-0.5">LL</span>
-					</div>
-				</div>
+		<!-- Background -->
+		<div class="hero-bg"></div>
+		<div class="hero-overlay"></div>
 
-				<div class="space-y-3">
-					<h1 class="text-6xl font-bold tracking-tight bg-gradient-to-r from-title-start to-title-end bg-clip-text text-transparent leading-tight pb-1 inline-block">
-						Lazy Labz
-					</h1>
-					<p class="text-xl text-slate-500 max-w-2xl mx-auto">
-						Building tools for developers, by developers. Because we're too lazy to do things the hard way. 🚀
-					</p>
-				</div>
+		<!-- Content -->
+		<div class="hero-content">
 
-				<div class="pt-4">
-					<a
-						href="https://github.com/lazylabz"
-						target="_blank"
-						class="inline-flex items-center justify-center rounded-md bg-gradient-to-br from-primary to-primary-alt hover:bg-gradient-to-br hover:from-primary-hover hover:to-primary-alt hover:-translate-y-px px-8 py-3 text-sm font-medium text-white shadow transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
-					>
-						Discover our dev hacks ⚡
-					</a>
-				</div>
+			<!-- Logo -->
+			<div class="logo-box">
+				<span>JG</span>
 			</div>
 
-			<!-- The Team -->
-			<div class="space-y-6">
-				<h2 class="text-2xl text-slate-900 font-semibold">The Team</h2>
-				<div class="flex justify-center gap-8">
-					<a
-						href="https://github.com/moisesrj97"
-						target="_blank"
-						class="flex flex-col items-center space-y-3 transition-all duration-200 hover:-translate-y-1 p-4 rounded-lg"
-					>
-						<img
-							src="https://avatars.githubusercontent.com/moisesrj97"
-							alt="Moises"
-							class="w-16 h-16 rounded-full border-2 border-primary-light"
-						>
-						<div class="text-center">
-							<p class="font-medium">Moises</p>
-							<p class="text-sm text-slate-500">@moisesrj97</p>
-						</div>
-					</a>
+			<!-- Title -->
+			<h1>
+				Juan Galisteo
+			</h1>
 
-					<a
-						href="https://github.com/noel-lopez"
-						target="_blank"
-						class="flex flex-col items-center space-y-3 transition-all duration-200 hover:-translate-y-1 p-4 rounded-lg"
-					>
-						<img
-							src="https://avatars.githubusercontent.com/noel-lopez"
-							alt="Noel"
-							class="w-16 h-16 rounded-full border-2 border-primary-light"
-						>
-						<div class="text-center">
-							<p class="font-medium">Noel</p>
-							<p class="text-sm text-slate-500">@noel-lopez</p>
-						</div>
-					</a>
-				</div>
-			</div>
-
-			<!-- Projects -->
-			<div class="space-y-6">
-				<h2 class="text-2xl text-slate-900 font-semibold">Our Projects</h2>
-				<div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-
-					<!-- Gomander Card -->
-					<a href="https://lazylabz.github.io/gomander" target="_blank" class="rounded-lg border border-slate-300 hover:border-primary-light bg-white text-slate-900 shadow-sm p-6 space-y-4 transition-all duration-300 relative overflow-hidden hover:-translate-y-2 hover:shadow-xl shimmer">
-						<div class="flex items-center space-x-3">
-							<Image src={gomanderLogo} alt="Gomander" class="w-10 h-10 rounded-lg flex items-center justify-center" />
-							<h3 class="text-xl font-semibold">Gomander</h3>
-						</div>
-						<p class="text-sm text-left text-slate-500">
-							A simple GUI to launch and organize your commands. Perfect for managing multiple development processes.
-						</p>
-					</a>
-
-					<!-- Coming Soon Card -->
-					<div class="select-none rounded-lg border border-slate-300 hover:border-slate-400 bg-white text-slate-900 shadow-sm p-6 space-y-4 opacity-75 transition-all duration-300 relative overflow-hidden hover:-translate-y-2 hover:shadow-xl">
-						<div class="flex items-center space-x-3">
-							<div class="w-10 h-10 bg-slate-200 rounded-lg flex items-center justify-center">
-								<span class="text-lg">✨</span>
-							</div>
-							<h3 class="text-xl font-semibold">Soon...</h3>
-						</div>
-						<p class="text-sm text-left text-slate-500">
-							More developer tools are cooking. Stay tuned for our next lazy solution to your daily dev problems.
-						</p>
-					</div>
-				</div>
-			</div>
-		</main>
-
-		<!-- Footer -->
-		<footer class="mt-16 w-full max-w-4xl text-center">
-			<p class="text-sm text-slate-500">
-				Currently building
-				<a href="https://lazylabz.github.io/gomander" target="_blank" class="text-slate-700 hover:text-slate-800 hover:underline">
-					Gomander
-				</a>
-				• © 2025 Lazy Labz
+			<!-- Subtitle -->
+			<p>
+				Desarrollador y creador de experiencias digitales
+				enfocadas en la calidad, el diseño y el detalle.
 			</p>
-		</footer>
-	</div>
+
+			<!-- Buttons -->
+			<div class="hero-buttons">
+
+				<a href="#">
+					Ver proyectos
+				</a>
+
+				<a href="#">
+					Contactar
+				</a>
+
+			</div>
+
+			<!-- Socials -->
+			<div class="socials">
+
+				<a href="https://github.com/juangalisteo" target="_blank">
+					GitHub
+				</a>
+
+				<a href="#" target="_blank">
+					LinkedIn
+				</a>
+
+				<a href="#" target="_blank">
+					Instagram
+				</a>
+
+			</div>
+
+		</div>
+
+	</section>
 </Layout>
 
 <style>
-	.shimmer::before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: -100%;
-		width: 100%;
-		height: 100%;
-		background: linear-gradient(90deg, transparent, rgba(250, 100, 255, 0.1), transparent);
-		transition: left 0.5s;
+
+	:global(body){
+		margin:0;
+		background:#050505;
+		font-family:Inter, sans-serif;
+		color:white;
+		overflow-x:hidden;
 	}
-	.shimmer:hover::before {
-		left: 100%;
+
+	.hero{
+		position:relative;
+		width:100%;
+		min-height:100vh;
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		padding:40px;
+		box-sizing:border-box;
 	}
+
+	.hero-bg{
+		position:absolute;
+		inset:0;
+		background-image:url('/hero-bg.jpg');
+		background-size:cover;
+		background-position:center;
+		filter:brightness(0.35);
+	}
+
+	.hero-overlay{
+		position:absolute;
+		inset:0;
+		background:
+			radial-gradient(circle at center, rgba(176,151,109,0.15), transparent 50%),
+			linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.8));
+	}
+
+	.hero-content{
+		position:relative;
+		z-index:2;
+		max-width:900px;
+		text-align:center;
+	}
+
+	.logo-box{
+		width:90px;
+		height:90px;
+		margin:0 auto 40px;
+		border:1px solid rgba(176,151,109,0.5);
+		border-radius:24px;
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		background:rgba(255,255,255,0.03);
+		backdrop-filter:blur(10px);
+		box-shadow:0 0 40px rgba(176,151,109,0.15);
+	}
+
+	.logo-box span{
+		font-size:42px;
+		font-weight:700;
+		color:#D6B36A;
+	}
+
+	h1{
+		font-size:92px;
+		line-height:1;
+		margin:0;
+		font-weight:800;
+		letter-spacing:-4px;
+		background:linear-gradient(to right, #ffffff, #D6B36A);
+		-webkit-background-clip:text;
+		-webkit-text-fill-color:transparent;
+	}
+
+	p{
+		margin:35px auto 0;
+		max-width:700px;
+		font-size:28px;
+		line-height:1.5;
+		color:rgba(255,255,255,0.75);
+	}
+
+	.hero-buttons{
+		margin-top:50px;
+		display:flex;
+		justify-content:center;
+		gap:20px;
+		flex-wrap:wrap;
+	}
+
+	.hero-buttons a{
+		padding:18px 38px;
+		border-radius:16px;
+		text-decoration:none;
+		font-weight:600;
+		font-size:17px;
+		transition:0.3s;
+	}
+
+	.hero-buttons a:first-child{
+		background:#D6B36A;
+		color:black;
+		box-shadow:0 0 25px rgba(214,179,106,0.35);
+	}
+
+	.hero-buttons a:first-child:hover{
+		transform:translateY(-3px);
+		background:#e6c27b;
+	}
+
+	.hero-buttons a:last-child{
+		border:1px solid rgba(255,255,255,0.2);
+		color:white;
+		background:rgba(255,255,255,0.03);
+		backdrop-filter:blur(10px);
+	}
+
+	.hero-buttons a:last-child:hover{
+		transform:translateY(-3px);
+		border-color:#D6B36A;
+	}
+
+	.socials{
+		margin-top:50px;
+		display:flex;
+		justify-content:center;
+		gap:30px;
+		flex-wrap:wrap;
+	}
+
+	.socials a{
+		color:rgba(255,255,255,0.65);
+		text-decoration:none;
+		font-size:16px;
+		transition:0.3s;
+	}
+
+	.socials a:hover{
+		color:#D6B36A;
+	}
+
+	@media(max-width:768px){
+
+		h1{
+			font-size:58px;
+			letter-spacing:-2px;
+		}
+
+		p{
+			font-size:20px;
+		}
+
+		.logo-box{
+			width:75px;
+			height:75px;
+		}
+
+		.logo-box span{
+			font-size:34px;
+		}
+
+	}
+
 </style>
