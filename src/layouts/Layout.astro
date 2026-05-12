@@ -4,22 +4,16 @@ import '../styles/global.css'
 
 <!doctype html>
 <html lang="en">
-
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width" />
-
-	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
-	<meta name="generator" content={Astro.generator} />
-
-	<title>Juan Galisteo</title>
-</head>
-
-<body class="bg-black text-white antialiased">
-	<slot />
-</body>
-
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/png" href="/juan-favicon.png" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Juan Galisteo</title>
+	</head>
+	<body class="bg-black text-white antialiased">
+		<slot />
+	</body>
 </html>
 
 <style>
@@ -29,13 +23,10 @@ import '../styles/global.css'
 	body {
 		margin: 0;
 		width: 100%;
-		min-height: 100%;
-		background: #000;
+		height: 100%;
 	}
 
 	body {
 		font-family: 'Inter', sans-serif;
-		background: #000;
-		color: white;
 	}
 </style>
