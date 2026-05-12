@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: hsl(250 100% 70%);        /* Base purple */
+    --color-primary-hover: hsl(250 100% 65%);  /* Hover state (darker) */
+    --color-primary-alt: hsl(270 100% 65%);    /* Variant for gradients */
+    --color-primary-light: hsl(250 100% 90%);   /* Mostly used for borders */
+    --color-logo: hsl(240 50% 25%);            /* Logo */
+    --color-logo-dark: hsl(260 50% 20%);       /* Logo gradient */
+    --color-title-start: hsl(260 50% 25%);     /* Title gradient start */
+    --color-title-end: hsl(250 45% 35%);       /* Title gradient end */
+}
