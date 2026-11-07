@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://juangalisteo.github.io/sitemap.xml
