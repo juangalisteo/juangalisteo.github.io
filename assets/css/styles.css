@@ -212,8 +212,8 @@ a.chip:hover small { color: var(--dorado); }
 .btn:active { transform: translateY(0); }
 .btn--gold { background: var(--dorado); color: var(--tinta); box-shadow: 0 10px 30px rgba(199, 161, 91, .25); }
 .btn--gold:hover { background: var(--dorado-claro); box-shadow: 0 14px 36px rgba(199, 161, 91, .38); }
-.btn--line { border: 1px solid rgba(250, 250, 247, .28); color: var(--blanco); }
-.btn--line:hover { border-color: var(--blanco); background: rgba(250, 250, 247, .06); }
+.btn--line { border: 1px solid rgba(250, 250, 247, .28); color: var(--blanco); background: var(--tinta); }
+.btn--line:hover { border-color: #7BC48B; color: #7BC48B; background: #24383F; box-shadow: 0 0 0 4px rgba(123, 196, 139, .12); }
 
 .link {
   display: inline-flex; align-items: center; gap: 8px;
@@ -478,12 +478,13 @@ h3 { font-size: clamp(24px, 2.4vw, 30px); line-height: 1.15; font-weight: 600; l
 .filter:hover { border-color: var(--tinta); }
 .filter.is-on { background: var(--tinta); color: var(--blanco); border-color: var(--tinta); }
 
-.techs { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+.techs { display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 10px; }
+.stack .head p { justify-self: end; text-align: right; }
 .tech {
   --brand: var(--tinta);
   position: relative; overflow: hidden; isolation: isolate;
   display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px;
-  aspect-ratio: 1 / .9; padding: 18px 12px; border-radius: 14px;
+  aspect-ratio: 1 / 1; padding: 12px 6px; border-radius: 14px;
   background: #fff; border: 1px solid var(--linea-clara);
   transition: transform .4s var(--ease), border-color .3s, box-shadow .4s, opacity .4s, filter .4s;
 }
@@ -492,13 +493,13 @@ h3 { font-size: clamp(24px, 2.4vw, 30px); line-height: 1.15; font-weight: 600; l
   background: radial-gradient(120% 90% at 50% 0%, color-mix(in srgb, var(--brand) 16%, transparent), transparent 70%);
   opacity: 0; transition: opacity .4s;
 }
-.tech__ico { width: 40px; height: 40px; fill: var(--tinta); transition: fill .3s, transform .4s var(--ease); }
+.tech__ico { width: 34px; height: 34px; fill: var(--tinta); transition: fill .3s, transform .4s var(--ease); }
 .tech__mono {
-  display: grid; place-items: center; width: 40px; height: 40px; border-radius: 10px;
-  background: var(--tinta); color: var(--blanco); font-weight: 600; font-size: 15px; letter-spacing: -.02em;
+  display: grid; place-items: center; width: 34px; height: 34px; border-radius: 9px;
+  background: var(--tinta); color: var(--blanco); font-weight: 600; font-size: 13px; letter-spacing: -.02em;
   transition: background-color .3s, transform .4s var(--ease);
 }
-.tech__name { font-size: 15px; font-weight: 500; text-align: center; color: var(--texto-claro); }
+.tech__name { font-size: 13px; font-weight: 500; line-height: 1.25; text-align: center; color: var(--texto-claro); }
 .tech:hover { transform: translateY(-6px); border-color: color-mix(in srgb, var(--brand) 55%, transparent); box-shadow: 0 20px 40px -18px color-mix(in srgb, var(--brand) 60%, transparent); }
 .tech:hover::before { opacity: 1; }
 .tech:hover .tech__ico { fill: var(--brand); transform: scale(1.12); }
@@ -564,7 +565,7 @@ h3 { font-size: clamp(24px, 2.4vw, 30px); line-height: 1.15; font-weight: 600; l
 .contact__main > p { color: var(--texto-oscuro); margin-bottom: 32px; font-size: 18px; line-height: 1.7; }
 .mail { display: flex; flex-wrap: nowrap; align-items: center; gap: 16px 20px; }
 .mail__link {
-  position: relative; font-size: clamp(18px, 2.4vw, 28px); font-weight: 500; text-decoration: none; overflow-wrap: anywhere;
+  position: relative; font-size: clamp(16px, 2vw, 24px); font-weight: 500; text-decoration: none; overflow-wrap: anywhere;
   padding-bottom: 4px;
   background: linear-gradient(var(--dorado), var(--dorado)) 0 100% / 100% 1px no-repeat;
   transition: background-size .3s, color .3s;
@@ -572,12 +573,12 @@ h3 { font-size: clamp(24px, 2.4vw, 30px); line-height: 1.15; font-weight: 600; l
 .mail__link:hover { color: var(--dorado-claro); background-size: 100% 2px; }
 
 .mail__gmail {
-  display: grid; place-items: center; width: 48px; height: 48px; flex: none;
-  border-radius: 12px; background: #fff; color: #EA4335;
+  display: grid; place-items: center; width: 34px; height: 34px; flex: none;
+  border-radius: 9px; background: #fff; color: #EA4335;
   box-shadow: 0 10px 24px -12px rgba(0, 0, 0, .6);
   transition: transform .25s var(--ease), box-shadow .25s;
 }
-.mail__gmail svg { width: 24px; height: 24px; }
+.mail__gmail svg { width: 18px; height: 18px; }
 .mail__gmail:hover { transform: translateY(-3px); box-shadow: 0 16px 30px -12px rgba(234, 67, 53, .55); }
 
 .contact__side { display: grid; gap: 40px; align-self: stretch; align-content: space-between; }
@@ -637,6 +638,7 @@ h3 { font-size: clamp(24px, 2.4vw, 30px); line-height: 1.15; font-weight: 600; l
 }
 @media (max-width: 1024px) {
   .apps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .techs { grid-template-columns: repeat(6, minmax(0, 1fr)); }
   .feature { grid-template-columns: minmax(0, 1fr); }
   .feature__text { position: static; padding-top: 0; }
   .method__in { grid-template-columns: minmax(0, 1fr); }
@@ -677,6 +679,12 @@ h3 { font-size: clamp(24px, 2.4vw, 30px); line-height: 1.15; font-weight: 600; l
   .flow__step--end .flow__pct { display: none; }
   .contact__in { grid-template-columns: minmax(0, 1fr); }
   .contact__main > p { font-size: 16px; }
+  .solo-web { display: none; }
+  .hero__status { display: none; }
+  .mail { gap: 12px; }
+  .mail__link { font-size: 15px; overflow-wrap: normal; white-space: nowrap; }
+  .mail__gmail { width: 30px; height: 30px; border-radius: 8px; }
+  .mail__gmail svg { width: 16px; height: 16px; }
   .contact__side { gap: 28px; }
   .contact__jg { display: none; }
   .pillars { grid-template-columns: minmax(0, 1fr); }
