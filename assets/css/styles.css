@@ -530,6 +530,7 @@ h3 { font-size: clamp(24px, 2.4vw, 30px); line-height: 1.15; font-weight: 600; l
 .about__text { display: grid; gap: 20px; max-width: 44em; }
 .about__big { font-size: clamp(28px, 3.4vw, 46px); line-height: 1.1; font-weight: 600; letter-spacing: -.025em; color: var(--tinta); }
 .about__big--movil { display: none; }
+.solo-movil { display: none; }
 .about__pen { display: block; font-family: "Chorus", "Segoe Script", cursive; font-weight: 400; font-size: clamp(64px, 6.6vw, 94px); line-height: .95; letter-spacing: 0; color: var(--dorado-oscuro); margin: -8px 0 10px -4px; }
 .about__mission { display: block; }
 .dots i { font-style: normal; animation: punto 1.4s infinite; opacity: .2; }
@@ -680,7 +681,10 @@ h3 { font-size: clamp(24px, 2.4vw, 30px); line-height: 1.15; font-weight: 600; l
   .contact__in { grid-template-columns: minmax(0, 1fr); }
   .contact__main > p { font-size: 16px; }
   .solo-web { display: none; }
+  .solo-movil { display: inline; }
   .hero__status { display: none; }
+  .stack .head p { display: none; }
+  .stack .head { margin-bottom: 24px; }
   .mail { gap: 12px; }
   .mail__link { font-size: 15px; overflow-wrap: normal; white-space: nowrap; }
   .mail__gmail { width: 30px; height: 30px; border-radius: 8px; }
@@ -733,3 +737,6 @@ h3 { font-size: clamp(24px, 2.4vw, 30px); line-height: 1.15; font-weight: 600; l
   hyphens: auto;
   hyphenate-limit-chars: 7 3 3;
 }
+
+/* Portada: sin cortar palabras con guion */
+.hero__lead { -webkit-hyphens: manual; hyphens: manual; }
