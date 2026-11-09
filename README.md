@@ -38,7 +38,7 @@ Para verla en tu equipo, abre una terminal en esta carpeta y ejecuta `python -m 
 
 ## Contacto
 
-- Correo: [juangalisteomarques@gmail.com](mailto:juangalisteomarques@gmail.com)
+- Correo: [juangalisteodev@gmail.com](mailto:juangalisteodev@gmail.com)
 - LinkedIn: [linkedin.com/in/juangalisteo](https://www.linkedin.com/in/juangalisteo/)
 - GitHub: [@juangalisteo](https://github.com/juangalisteo)
 
