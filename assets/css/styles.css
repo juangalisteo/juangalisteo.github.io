@@ -371,7 +371,7 @@ h3 { font-size: clamp(24px, 2.4vw, 30px); line-height: 1.15; font-weight: 600; l
 .no-anim .flow__step { transform: none; }
 
 /* Programas de escritorio */
-.apps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(24px, 3vw, 40px); }
+.apps { --gap: clamp(24px, 3vw, 40px); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--gap); }
 .app { display: flex; flex-direction: column; }
 .app__shot {
   --mx: 50%; --my: 30%; --rx: 0deg; --ry: 0deg;
@@ -401,6 +401,15 @@ h3 { font-size: clamp(24px, 2.4vw, 30px); line-height: 1.15; font-weight: 600; l
 .app__body > p:not(.kind) { color: var(--texto-claro); font-size: 16px; }
 .app__body .tags { margin-top: 16px; margin-bottom: 20px; }
 .app__body .link { margin-top: auto; align-self: flex-start; }
+/* Tarjeta horizontal (ancho de dos tarjetas, centrada en su fila) */
+.app--wide {
+  grid-column: 1 / -1; justify-self: center;
+  width: calc((100% - 2 * var(--gap)) / 3 * 2 + var(--gap));
+  flex-direction: row; align-items: center; gap: clamp(24px, 3vw, 40px);
+}
+.app--wide .app__shot { flex: 0 0 58%; aspect-ratio: 16 / 10; padding: 22px 22px 0; }
+.app--wide .app__body { padding-top: 0; flex: 1; min-width: 0; }
+.app--wide .app__body .link { margin-top: 0; }
 
 /* ---------- Método ---------- */
 .method { position: relative; overflow: hidden; isolation: isolate; background: var(--tinta); color: var(--blanco); padding: clamp(88px, 11vw, 150px) 0; }
@@ -639,6 +648,7 @@ h3 { font-size: clamp(24px, 2.4vw, 30px); line-height: 1.15; font-weight: 600; l
 }
 @media (max-width: 1024px) {
   .apps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .app--wide { width: 100%; }
   .techs { grid-template-columns: repeat(6, minmax(0, 1fr)); }
   .feature { grid-template-columns: minmax(0, 1fr); }
   .feature__text { position: static; padding-top: 0; }
@@ -673,6 +683,7 @@ h3 { font-size: clamp(24px, 2.4vw, 30px); line-height: 1.15; font-weight: 600; l
   .head { grid-template-columns: minmax(0, 1fr); }
   .apps { grid-template-columns: minmax(0, 1fr); gap: 56px; }
   .app__shot { aspect-ratio: 4 / 3.6; }
+  .app--wide { display: none; }
   .flow__step { grid-template-columns: 40px minmax(0, 1fr) auto; gap: 12px; padding: 12px; }
   .flow__ico { width: 40px; height: 40px; }
   .flow__step:not(:last-child)::after { left: 31px; }
