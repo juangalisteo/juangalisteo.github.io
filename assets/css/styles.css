@@ -406,12 +406,10 @@ h3 { font-size: clamp(24px, 2.4vw, 30px); line-height: 1.15; font-weight: 600; l
   grid-column: 1 / -1; display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: var(--gap); align-items: start;
 }
-.app--wide .app__shot { grid-column: 1 / 3; aspect-ratio: 16 / 10; padding: 0; }
-.app--wide .app__shot img {
-  height: calc(100% + 12px); object-fit: cover; object-position: top;
-  border-radius: 0; box-shadow: none;
-}
-.app--wide .app__body { grid-column: 3; padding-top: 0; }
+/* Mismo marco que las otras; la imagen se ve entera y nunca más grande que su tamaño real (1454 px) */
+.app--wide .app__shot { grid-column: 1 / 3; aspect-ratio: auto; }
+.app--wide .app__shot img { display: block; max-width: 1454px; margin-inline: auto; }
+.app--wide .app__body { grid-column: 3; padding-top: 28px; }
 
 /* ---------- Método ---------- */
 .method { position: relative; overflow: hidden; isolation: isolate; background: var(--tinta); color: var(--blanco); padding: clamp(88px, 11vw, 150px) 0; }
