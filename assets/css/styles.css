@@ -601,6 +601,7 @@ h3 { font-size: clamp(24px, 2.4vw, 30px); line-height: 1.15; font-weight: 600; l
 }
 .channels a:hover { color: var(--blanco); padding-left: 8px; }
 .channels svg { width: 22px; height: 22px; flex: none; color: var(--dorado); fill: var(--dorado); }
+.channels .channels__wa { color: var(--blanco); } /* WhatsApp: texto en blanco */
 
 .contact__foot {
   display: flex; align-items: center; justify-content: space-between; gap: 16px 32px; flex-wrap: wrap;
