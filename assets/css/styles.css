@@ -601,7 +601,6 @@ h3 { font-size: clamp(24px, 2.4vw, 30px); line-height: 1.15; font-weight: 600; l
 }
 .channels a:hover { color: var(--blanco); padding-left: 8px; }
 .channels svg { width: 22px; height: 22px; flex: none; color: var(--dorado); fill: var(--dorado); }
-.channels .channels__wa { color: var(--blanco); } /* WhatsApp: texto en blanco */
 
 .contact__foot {
   display: flex; align-items: center; justify-content: space-between; gap: 16px 32px; flex-wrap: wrap;
@@ -686,6 +685,9 @@ h3 { font-size: clamp(24px, 2.4vw, 30px); line-height: 1.15; font-weight: 600; l
   .head { grid-template-columns: minmax(0, 1fr); }
   .apps { grid-template-columns: minmax(0, 1fr); gap: 56px; }
   .app__shot { aspect-ratio: 4 / 3.6; }
+  /* Project Manager: la ventana es alta; en el móvil se ve entera */
+  .app__shot--entera { aspect-ratio: auto; padding-bottom: 28px; }
+  .app__shot--entera img { border-radius: 6px; }
   .app--wide { display: none; }
   .flow__step { grid-template-columns: 40px minmax(0, 1fr) auto; gap: 12px; padding: 12px; }
   .flow__ico { width: 40px; height: 40px; }
